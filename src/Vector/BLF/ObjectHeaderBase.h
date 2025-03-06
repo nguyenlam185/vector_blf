@@ -12,6 +12,8 @@
 
 #include <Vector/BLF/vector_blf_export.h>
 
+using namespace std;
+
 namespace Vector {
 namespace BLF {
 
@@ -20,7 +22,7 @@ namespace BLF {
  *
  * Object type.
  */
-enum class ObjectType : uint32_t {
+enum class ObjectType : std::uint32_t {
     UNKNOWN = 0, /**< unknown object */
     CAN_MESSAGE = 1, /**< CAN message object */
     CAN_ERROR = 2, /**< CAN error frame object */
